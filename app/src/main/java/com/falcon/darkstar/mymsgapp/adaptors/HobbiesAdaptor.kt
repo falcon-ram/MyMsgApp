@@ -1,4 +1,4 @@
-package com.falcon.darkstar.mymsgapp
+package com.falcon.darkstar.mymsgapp.adaptors
 
 import android.content.Context
 import android.content.Intent
@@ -7,10 +7,11 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import com.falcon.darkstar.mymsgapp.models.Hobby
+import com.falcon.darkstar.mymsgapp.R
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class HobbiesAdaptor(val context: Context, val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdaptor.MyViewHolder>() {
+class HobbiesAdaptor(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdaptor.MyViewHolder>() {
 
     inner class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         var currentHobby: Hobby? = null

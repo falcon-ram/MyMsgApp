@@ -1,8 +1,11 @@
-package com.falcon.darkstar.mymsgapp
+package com.falcon.darkstar.mymsgapp.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.falcon.darkstar.mymsgapp.adaptors.HobbiesAdaptor
+import com.falcon.darkstar.mymsgapp.R
+import com.falcon.darkstar.mymsgapp.models.Supplier
 import kotlinx.android.synthetic.main.activity_hobbies.*
 
 class HobbiesActivity : AppCompatActivity() {
@@ -10,11 +13,19 @@ class HobbiesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hobbies)
 
+        setupRecyclerView()
+
+    }
+
+    private fun setupRecyclerView() {
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
 
-        val adaptor = HobbiesAdaptor(this, Supplier.hobbies)
+        val adaptor = HobbiesAdaptor(
+            this,
+            Supplier.hobbies
+        )
         recyclerView.adapter = adaptor  // This recyclerView is from the activities_hobbies.xml
     }
 }

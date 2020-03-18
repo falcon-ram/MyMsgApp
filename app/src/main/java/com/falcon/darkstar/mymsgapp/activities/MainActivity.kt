@@ -1,10 +1,11 @@
-package com.falcon.darkstar.mymsgapp
+package com.falcon.darkstar.mymsgapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.falcon.darkstar.mymsgapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

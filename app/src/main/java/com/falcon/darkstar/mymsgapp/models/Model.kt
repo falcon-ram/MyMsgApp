@@ -1,4 +1,4 @@
-package com.falcon.darkstar.mymsgapp
+package com.falcon.darkstar.mymsgapp.models
 
 data class Hobby(var title: String)
 
