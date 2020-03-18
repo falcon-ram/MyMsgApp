@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.falcon.darkstar.mymsgapp.R
+import com.falcon.darkstar.mymsgapp.showToast
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
@@ -15,7 +16,8 @@ class SecondActivity : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         val msg = bundle!!.getString("user_message") // !! = Not NULL
 
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        showToast(msg)
+        //Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
 
         txtUserMessage.text = msg
     }

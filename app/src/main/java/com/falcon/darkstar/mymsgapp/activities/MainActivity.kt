@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.falcon.darkstar.mymsgapp.R
+import com.falcon.darkstar.mymsgapp.showToast
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         btnShowToast.setOnClickListener {
             // Code
             Log.i("MainActivity", "Button was clicked!")
-
-            Toast.makeText(this, "Button was clicked!", Toast.LENGTH_SHORT).show()
+            showToast("Button was clicked!")
+            //Toast.makeText(this, "Button was clicked!", Toast.LENGTH_SHORT).show()
         }
 
         btnSendMsgToNextActivity.setOnClickListener {
