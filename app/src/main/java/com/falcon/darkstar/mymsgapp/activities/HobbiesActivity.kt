@@ -22,9 +22,12 @@ class HobbiesActivity : AppCompatActivity() {
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
 
+        Supplier.loadHobby()
+        //Supplier.loadImgData() // There is a network exception error in this function. Don't know why
+
         val adaptor = HobbiesAdaptor(
             this,
-            Supplier.hobbies
+            Supplier.hobbies2
         )
         recyclerView.adapter = adaptor  // This recyclerView is from the activities_hobbies.xml
     }
