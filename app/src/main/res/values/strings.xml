@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyMsgApp</string>
+
+    <string name="btn_show_toast">Show Toast</string>
+    <string name="ent_msg">Enter your message</string>
+    <string name="btn_send_data_nxt_act">Send Data to Next Activity</string>
+    <string name="btn_share_app">Share to App</string>
+    <string name="btn_recycler_demo">RecyclerView and CardView Demo</string>
+    <string name="msg_btn_clicked">Button was clicked!</string>
+
 </resources>

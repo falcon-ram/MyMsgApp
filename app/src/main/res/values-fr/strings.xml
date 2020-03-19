@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyMsgApp</string>
+    <string name="btn_show_toast">Afficher le toast</string>
+    <string name="ent_msg">Entrez votre message</string>
+    <string name="btn_send_data_nxt_act">Envoyer des données à la prochaine activité</string>
+    <string name="btn_share_app">Partager sur l\'application</string>
+    <string name="btn_recycler_demo">Démo RecyclerView et CardView</string>
+    <string name="msg_btn_clicked">Le bouton a été cliqué!</string>
+
+</resources>
