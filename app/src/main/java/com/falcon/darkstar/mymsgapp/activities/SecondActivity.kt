@@ -14,11 +14,18 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
         val bundle: Bundle? = intent.extras
-        val msg = bundle!!.getString("user_message") // !! = Not NULL
+        //val msg = bundle!!.getString("user_message") // !! = Not NULL
 
-        showToast(msg)
-        //Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        // Safe call with let. This will only execute the lambda function if the
+        // bundle != null
+        bundle?.let {
+            val msg = bundle.getString("user_message") // !! = Not NULL
+            showToast(msg)
+            //Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
 
-        txtUserMessage.text = msg
+            txtUserMessage.text = msg
+        }
+
+
     }
 }
