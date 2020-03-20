@@ -24,7 +24,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="217dp"
         android:ems="10"
-        android:hint="@string/ent_msg" />
+        android:hint="@string/ent_msg"
+        android:inputType="textShortMessage|text"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
